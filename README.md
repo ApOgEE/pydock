@@ -9,6 +9,20 @@ When I found that I can do python in docker and able to manage the version consi
 
 This project is created as my playground with python codes in docker.
 
+### TLDR;
+After clone, run this commands:
+```bash
+$ docker run --name tmppydock python:3.6-slim-stretch /bin/true
+$ docker cp tmppydock:/usr/local/lib/python3.6/site-packages .
+$ docker rm tmppydock
+$ docker-compose run --rm pydock pip install -r requirements.txt
+```
+
+enjoy coding Python, have fun and run it using this command:
+```bash
+docker-compose run --rm pydock ./myapp.py
+```
+
 ### Installing Persistent Python Packages
 
 As normal docker image would do. It will not keep any files unless we tag and use the updated image. However, when I need to use Packages, I want it to persist as I don't want to install it again everytime I start coding in the standard python docker image again.

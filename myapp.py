@@ -1,3 +1,5 @@
+#!/usr/local/bin/python
+
 from bs4 import BeautifulSoup
 
 print("This is APOGEEK Python Playground")
