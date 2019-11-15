@@ -1,0 +1,5 @@
+beautifulsoup4==4.8.1
+cssselect==1.1.0
+lxml==4.4.1
+pyquery==1.4.1
+soupsieve==1.9.5

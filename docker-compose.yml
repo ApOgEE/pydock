@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  pydock:
+    image: python:3.6-slim-stretch
+    container_name: apogeekpy
+    volumes:
+      - ./site-packages:/usr/local/lib/python3.6/site-packages
+      - ./:/usr/src/myapp
+    working_dir: "/usr/src/myapp"
